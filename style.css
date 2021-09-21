@@ -43,8 +43,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background: url(images/pattern-background-desktop.svg) no-repeat top left,
     hsl(225deg 78% 95%);
-  background-size: contain;
-  display: block;
+  width: 100%;
 }
 
 .card {
@@ -153,7 +152,7 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.attribution a {
+.attribution a:hover {
   color: hsl(223, 47%, 23%);
 }
 
@@ -162,9 +161,20 @@ body {
     width: 320px;
     margin: 5vh auto;
   }
+
+  body {
+    background: url(images/pattern-background-mobile.svg) no-repeat top left,
+      hsl(225deg 78% 95%);
+    background-size: contain;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    background: url(images/pattern-background-mobile.svg) no-repeat top left,
+      hsl(225deg 78% 95%);
+    background-size: contain;
+  }
   .card {
     width: 300px;
   }
